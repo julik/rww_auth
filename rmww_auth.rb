@@ -10,12 +10,8 @@ retrieved. Please go and make OpenID frontends from that, I dare you!
 
 Usage:
 
-    rww = RemoteWebWorkplaceAuth.new do | a |
-      a.server = "intranet.bigenterprise.com"
-      a.use_ssl = true #otherwise your sysadmin is nuts
-    end
-    
-    if rww.authenticate("julik", "topsecret")
+    rww_servr = RemoteWebWorkplaceAuth.new("intranet.bigenterprise.com" use_ssl = true)
+    if rww_servr.authenticate("julik", "topsecret")
       puts "Yuppie!"
     else
       puts "No donut"
@@ -27,13 +23,17 @@ class RemoteWorkplaceAuth
   VIEW_STATE_PAT =  /name="__VIEWSTATE" value="([^"]+)"/
   attr_accessor :server, :use_ssl
   
-  def initialize(server = nil)
-    @server = server
-    yield(self) if block_given?
-    raise "You need to provide a server!" unless @server
+  def initialize(hostname, use_ssl = true)
+    @server = hostname
     @base_login_url = '/Remote/logon.aspx?ReturnUrl=%2fRemote%2fDefault.aspx'
-    @outlook = Net::HTTP.new(@server, 443)
-    @outlook.use_ssl = !!@use_ssl
+    @outlook = if use_ssl
+      o = Net::HTTP.new(@server, 443)
+      o.use_ssl = true
+      o.verify_mode = OpenSSL::SSL::VERIFY_NONE
+      o
+    else
+      Net::HTTP.new(@server)
+    end
   end
   
   # Will run the auth
@@ -85,7 +85,7 @@ if __FILE__ == $0
   p "Password: " 
   pass = gets.chomp
   
-  a = RemoteWorkplaceAuth.new { |a| a.server = server; a.use_ssl = use_ssl}
+  a = RemoteWorkplaceAuth.new(server, use_ssl)
   if a.auth(login, pass)
     puts "========================"
     puts "Auth passed, user exists"
