@@ -1,0 +1,9 @@
+Gemfile
+Gemfile.lock
+Manifest.txt
+README.rdoc
+Rakefile
+lib/rmww_auth.rb
+test/cassettes/failing_auth_with_SSL.yml
+test/cassettes/passing_auth_with_SSL.yml
+test/test_rmwwauth.rb

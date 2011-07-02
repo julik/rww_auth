@@ -1,0 +1,496 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://mail.enterprise.co.uk:443/Remote/logon.aspx?ReturnUrl=/Remote/Default.aspx
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sat, 02 Jul 2011 20:42:18 GMT
+      server: 
+      - Microsoft-IIS/6.0
+      microsoftofficewebserver: 
+      - 5.0_Pub
+      x-powered-by: 
+      - ASP.NET
+      x-aspnet-version: 
+      - 1.1.4322
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      expires: 
+      - "-1"
+      content-type: 
+      - text/html; charset=utf-8
+      content-length: 
+      - "8779"
+    body: "\r\n\
+      <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" >\r\n\
+      \r\n\
+      <HTML xmlns:IE>\r\n\
+      \t<HEAD>\r\n\
+      \t\t<title>Hectic Electric Remote Web Workplace</title>\r\n\
+      \t\t<meta name=\"GENERATOR\" Content=\"Microsoft Visual Studio 7.0\">\r\n\
+      \t\t<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\r\n\
+      \t\t<META HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\r\n\
+      \t\t<meta name=\"CODE_LANGUAGE\" Content=\"C#\">\r\n\
+      \t\t<meta name=\"vs_defaultClientScript\" content=\"JavaScript\">\r\n\
+      \t\t<meta name=\"vs_targetSchema\" content=\"http://schemas.microsoft.com/intellisense/ie5\">\r\n\
+      \t\t<META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\">\r\n\
+      \t\t<STYLE>\r\n\
+      \t\t    .headerBackground { background-image: url(images/login.gif); background-repeat: no-repeat; }\r\n\
+      \t\t\t.headerLogo { FONT-SIZE: 14pt; FONT-WEIGHT: bold; COLOR: white; FONT-FAMILY: Tahoma } \r\n\
+      \t\t\t.subHeader { FONT-SIZE: 12pt; COLOR: white; FONT-FAMILY: Tahoma }\r\n\
+      \t\t\t.linkText { FONT-SIZE: 80%; COLOR: black; FONT-FAMILY: Tahoma }\r\n\
+      \t\t\tA { COLOR: #183c84; TEXT-DECORATION: none } \r\n\
+      \t\t\tA:hover { TEXT-DECORATION: underline } \r\n\
+      \t\t\tA:visited { COLOR: #183c84 } \r\n\
+      \t\t\t\r\n\
+      \t\t\t@media all \r\n\
+      \t\t\t{\r\n\
+      \t\t\t\tIE\\:clientCaps { behavior:url(#default#clientcaps) }\r\n\
+      \t\t\t}\t\t\r\n\
+      \t\t</STYLE>\r\n\
+      \t\t<script language=\"javascript\">\r\n\
+      \t\t\r\n\
+      \t\tvar g_bFocus = true;\r\n\
+      \t\t\t\r\n\
+      \t\tfunction isIE6sp1()\r\n\
+      \t\t{\r\n\
+      \t\t\tvar nVerOffset = navigator.appVersion.indexOf(\"MSIE \");\r\n\
+      \t\t\tif( nVerOffset == -1 ) return true;\r\n\
+      \t\t\t\r\n\
+      \t\t\tvar nVersion = parseFloat(navigator.appVersion.substring(nVerOffset + 5, nVerOffset + 8));\r\n\
+      \r\n\
+      \t\t\tif (!isNaN(nVersion))\r\n\
+      \t\t\t{\r\n\
+      \t\t\t\tif (nVersion > 6)\r\n\
+      \t\t\t\t{\r\n\
+      \t\t\t\t\treturn true;\r\n\
+      \t\t\t\t}\r\n\
+      \t\t\t\telse if (nVersion == 6)\r\n\
+      \t\t\t\t{\r\n\
+      \t\t\t\t\tvar nSPOffset = navigator.appMinorVersion.indexOf(\"SP\");\r\n\
+      \t\t\t\t\tif (nSPOffset != -1)\r\n\
+      \t\t\t\t\t{\r\n\
+      \t\t\t\t\t\tvar nVerSP = parseInt(navigator.appMinorVersion.substring(nSPOffset + 2, nSPOffset + 3), 10);\r\n\
+      \t\t\t\t\t\tif (!isNaN(nVerSP) && (nVerSP >= 1))\r\n\
+      \t\t\t\t\t\t\treturn true;\r\n\
+      \t\t\t\t\t}\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\tvar strIEFullVersion = oClientCaps.getComponentVersion(\"{89820200-ECBD-11CF-8B85-00AA005B4383}\",\"ComponentID\");\t\t\t\t\t\r\n\
+      \t\t\t\t\tif (strIEFullVersion != null)\r\n\
+      \t\t\t\t\t{\r\n\
+      \t\t\t\t\t\tvar aVersionPart = strIEFullVersion.split(\",\");\r\n\
+      \t\t\t\t\t\tif( aVersionPart != null && aVersionPart.length > 3 )\r\n\
+      \t\t\t\t\t\t{\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\tvar nBuildNum = parseInt(aVersionPart[2], 10);\r\n\
+      \t\t\t\t\t\t\tif( !isNaN(nBuildNum) && nBuildNum >= 3790 )\r\n\
+      \t\t\t\t\t\t\t\treturn true;\r\n\
+      \t\t\t\t\t\t}\r\n\
+      \t\t\t\t\t}\t\t\t\t\t\r\n\
+      \t\t\t\t}\r\n\
+      \t\t\t}\r\n\
+      \t\t\treturn false;\r\n\
+      \t\t}\r\n\
+      \r\n\
+      \t\tfunction onLoad()\r\n\
+      \t\t{\r\n\
+      \t\t\tif (top.header != null)\r\n\
+      \t\t\t{\r\n\
+      \t\t\t\ttop.location = \"logon.aspx\";\r\n\
+      \t\t\t}\r\n\
+      \t\t\t\r\n\
+      \t\t\t\r\n\
+      \t\t\t\t\tif(g_bFocus && document.logon.txtUserName.value == \"\")\r\n\
+      \t\t\t\t\t{\r\n\
+      \t\t\t\t\t\tdocument.logon.txtUserName.focus();\r\n\
+      \t\t\t\t\t}\r\n\
+      \t\t\t\r\n\
+      \t\t\t\r\n\
+      \t\t\t// Clear the cache at all times\r\n\
+      \t\t\tdocument.execCommand(\"ClearAuthenticationCache\",\"false\");\t\t\t\r\n\
+      \t\t\tdocument.cookie = \"IE6SP1=\" + isIE6sp1();\r\n\
+      \t\t\t\r\n\
+      \t\t\tvar nVerOffset = navigator.appVersion.indexOf(\"MSIE \");\r\n\
+      \t\t\tif( nVerOffset != -1 )\r\n\
+      \t\t\t{\r\n\
+      \t\t\t    if (isIE6sp1())\r\n\
+      \t\t\t    {\r\n\
+      \t\t\t        var bFound = false;\r\n\
+      \t\t\t        var aCookie = document.cookie.split(\"; \");\r\n\
+      \t\t\t        for (var i = 0; i < aCookie.length && !bFound; i++)\r\n\
+      \t\t\t        {\r\n\
+      \t\t\t            var aCrumb = aCookie[i].split(\"=\");\r\n\
+      \t\t\t            if (aCrumb[0] == \"Trusted\")\r\n\
+      \t\t\t            {\r\n\
+      \t\t\t                if (document.logon.checkPublic != null)\r\n\
+      \t\t\t                {\r\n\
+      \t\t\t                    if (aCrumb[1] == \"True\")\r\n\
+      \t\t\t                        document.logon.checkPublic.checked = true;\r\n\
+      \t\t\t                    else if (aCrumb[1] == \"False\")\r\n\
+      \t\t\t                        document.logon.checkPublic.checked = false;\r\n\
+      \t\t\t                }\r\n\
+      \t\t\t                else if (document.logon.checkPublic2 != null)\r\n\
+      \t\t\t                {\r\n\
+      \t\t\t                    if (aCrumb[1] == \"True\")\r\n\
+      \t\t\t                        document.logon.checkPublic2.checked = true;\r\n\
+      \t\t\t                    else if (aCrumb[1] == \"False\")\r\n\
+      \t\t\t                        document.logon.checkPublic2.checked = false;\r\n\
+      \t\t\t                }\r\n\
+      \t\t\t                bFound = true;\r\n\
+      \t\t\t            }    \r\n\
+      \t\t\t        }    \r\n\
+      \t\t\t    }\r\n\
+      \t\t\t}\r\n\
+      \t\t}\r\n\
+      \t\t\t\t\r\n\
+      \t\tfunction validatePwd()\r\n\
+      \t\t{\r\n\
+      \t\t\tif (document.logon.txtChangeUserPassNew.value != document.logon.txtChangeUserPassConfirm.value)\r\n\
+      \t\t\t{\r\n\
+      \t\t\t\talert('The new password and the confirmation password do not match. Type the same password in both boxes.');\r\n\
+      \t\t\t\treturn false;\r\n\
+      \t\t\t}\r\n\
+      \t\t}\r\n\
+      \t\t</script>\r\n\
+      \t</HEAD>\r\n\
+      \t<body MS_POSITIONING=\"GridLayout\" onload=\"onLoad()\" bgcolor=\"#3A6EA5\">\r\n\
+      \t\t<IE:CLIENTCAPS ID=\"oClientCaps\" />\r\n\
+      \t\t<form name=\"logon\" method=\"post\" action=\"logon.aspx?ReturnUrl=%2fRemote%2fDefault.aspx\" id=\"logon\" autocomplete=\"off\">\r\n\
+      <input type=\"hidden\" name=\"__VIEWSTATE\" value=\"dDwtMTk3ODkzNzE3NTt0PHA8bDxydXBGYWlsZWQ7cnVwUGFnZU1vZGU7PjtsPG88Zj47Rm9ybVNhbXBsZTEubG9nb24rUEFHRV9NT0RFLCBSRU1PVEUsIFZlcnNpb249NS4yLjI4OTMuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMWJmMzg1NmFkMzY0ZTM1PFBBR0VNT0RFX0xPR09OPjs+PjtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+Oz47bDx0PDtsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47PjtsPHQ8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHZhbHVlOz47bDxPSzs+Pjs7Pjt0PHQ8O3Q8aTw0PjtAPE1vZGVtICgyOC44IEticHMpO01vZGVtICg1NiBLYnBzKTtCcm9hZGJhbmQ7U21hbGwgQnVzaW5lc3MgTmV0d29yazs+O0A8TW9kZW0gKDI4LjggS2Jwcyk7TW9kZW0gKDU2IEticHMpO0Jyb2FkYmFuZDtTbWFsbCBCdXNpbmVzcyBOZXR3b3JrOz4+O2w8aTwyPjs+Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPEknbSB1c2luZyBhIHB1YmxpYyBvciBzaGFyZWQgY29tcHV0ZXI7Pj47Pjs7Pjs+Pjt0PDtsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0Pjs+O2w8dDxwPGw8c3R5bGU7PjtsPFdJRFRIOjI4OHB4XDs7Pj47Oz47dDxwPGw8c3R5bGU7PjtsPFdJRFRIOjI4OHB4XDs7Pj47Oz47dDxwPGw8dmFsdWU7PjtsPExvZyBPbjs+Pjs7Pjt0PHQ8O3Q8aTw0PjtAPE1vZGVtICgyOC44IEticHMpO01vZGVtICg1NiBLYnBzKTtCcm9hZGJhbmQ7U21hbGwgQnVzaW5lc3MgTmV0d29yazs+O0A8TW9kZW0gKDI4LjggS2Jwcyk7TW9kZW0gKDU2IEticHMpO0Jyb2FkYmFuZDtTbWFsbCBCdXNpbmVzcyBOZXR3b3JrOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxJJ20gdXNpbmcgYSBwdWJsaWMgb3Igc2hhcmVkIGNvbXB1dGVyOz4+Oz47Oz47Pj47Pj47Pj47bDxjaGVja1B1YmxpYzs+PnyFSxZizxHwX9XoFsADoxqhiqak\" />\r\n\
+      \r\n\
+      \t\t\t\r\n\
+      \t\t\t<table id=\"panelLogon\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\"><tr><td>\r\n\
+      \r\n\
+      \t\t\t\t<table align=center cellpadding=\"0\" cellspacing=\"0\" width=\"448px\" border=\"0\" ID=\"Table5\">\t\t\t\t\t\r\n\
+      \t\t\t\t\t<tr height=\"100px\"><td>&nbsp;</td></tr>\r\n\
+      \t\t\t\t\t<tr height=\"110px\">\r\n\
+      \t\t\t\t\t\t<td>\r\n\
+      \t\t\t\t\t\t\t<table width=\"448px\" height=\"110px\" cellspacing=\"12\" class=\"headerBackground\" ID=\"Table6\">\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"20px\"><td>&nbsp;</td></tr>\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"52px\">\r\n\
+      \t\t\t\t\t\t\t\t\t<td width=\"51px\">&nbsp;</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td width=\"32px\"><img src=\"images/winxp.gif\"></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td>\r\n\
+      \t\t\t\t\t\t\t\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" ID=\"Table7\" height=\"32px\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<tr><td class=\"subHeader\">\tHectic Electric</td></tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<tr><td class=\"headerLogo\">Remote Web Workplace</td></tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t<td class=linkText>\r\n\
+      \t\t\t\t\t\t\t<table bgcolor=White ID=\"Table8\" width=\"448px\" cellspacing=\"12\">\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"15px\">\r\n\
+      \t\t\t\t\t\t\t\t\t<td colspan=3>&nbsp;</td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td align=right class=linkText>User name:</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<TD class=\"linkText\"><input name=\"txtUserName\" id=\"txtUserName\" type=\"text\" tabIndex=\"1\" style=\"WIDTH:288px;\" /></TD>\r\n\
+      \t\t\t\t\t\t\t\t\t<td class=\"linkText\"></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td align=right class=linkText>Password:</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<TD class=\"linkText\"><input name=\"txtUserPass\" id=\"txtUserPass\" type=\"password\" tabIndex=\"2\" onfocus=\"g_bFocus=false;\" style=\"WIDTH:288px;\" /></TD>\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"20px\">\r\n\
+      \t\t\t\t\t\t\t\t\t<td colspan=3 align=right><input name=\"cmdLogin\" id=\"cmdLogin\" type=\"submit\" tabIndex=\"3\" value=\"Log On\" /></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td align=right class=linkText>Connection speed:</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td><select name=\"listSpeed\" id=\"listSpeed\" tabindex=\"4\" class=\"linkText\">\r\n\
+      \t\t<option value=\"Modem (28.8 Kbps)\">Modem (28.8 Kbps)</option>\r\n\
+      \t\t<option value=\"Modem (56 Kbps)\">Modem (56 Kbps)</option>\r\n\
+      \t\t<option selected=\"selected\" value=\"Broadband\">Broadband</option>\r\n\
+      \t\t<option value=\"Small Business Network\">Small Business Network</option>\r\n\
+      \r\n\
+      \t</select></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td class=\"linkText\"></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td><span class=\"linkText\"><input id=\"checkPublic\" type=\"checkbox\" name=\"checkPublic\" checked=\"checked\" tabindex=\"5\" /><label for=\"checkPublic\">I'm using a public or shared computer</label></span></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td class=\"linkText\"></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"20px\"><td colspan=3 align=right><img src=\"images/RwwOEMLogo.gif\"></td></tr>\r\n\
+      \t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t</tr>\t\t\t\t\t\r\n\
+      \t\t\t\t</table>\r\n\
+      \t\t\t\r\n\
+      </td></tr></table>\r\n\
+      \t\t</form>\r\n\
+      \t</body>\r\n\
+      </HTML>\r\n"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://mail.enterprise.co.uk:443/Remote/logon.aspx
+    body: txtUserName=julik&txtUserPass=fake&cmdLogin=cmdLogin&listSpeed=Broadband&__VIEWSTATE=dDwtMTk3ODkzNzE3NTt0PHA8bDxydXBGYWlsZWQ7cnVwUGFnZU1vZGU7PjtsPG88Zj47Rm9ybVNhbXBsZTEubG9nb24rUEFHRV9NT0RFLCBSRU1PVEUsIFZlcnNpb249NS4yLjI4OTMuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMWJmMzg1NmFkMzY0ZTM1PFBBR0VNT0RFX0xPR09OPjs%2bPjtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM%2bOz47bDx0PDtsPGk8MD47aTwxPjtpPDI%2bO2k8Mz47aTw0PjtpPDU%2bO2k8Nj47PjtsPHQ8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4%2bOzs%2bO3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4%2bOzs%2bO3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4%2bOzs%2bO3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4%2bOzs%2bO3Q8cDxsPHZhbHVlOz47bDxPSzs%2bPjs7Pjt0PHQ8O3Q8aTw0PjtAPE1vZGVtICgyOC44IEticHMpO01vZGVtICg1NiBLYnBzKTtCcm9hZGJhbmQ7U21hbGwgQnVzaW5lc3MgTmV0d29yazs%2bO0A8TW9kZW0gKDI4LjggS2Jwcyk7TW9kZW0gKDU2IEticHMpO0Jyb2FkYmFuZDtTbWFsbCBCdXNpbmVzcyBOZXR3b3JrOz4%2bO2w8aTwyPjs%2bPjs7Pjt0PHA8cDxsPFRleHQ7PjtsPEknbSB1c2luZyBhIHB1YmxpYyBvciBzaGFyZWQgY29tcHV0ZXI7Pj47Pjs7Pjs%2bPjt0PDtsPGk8MD47aTwxPjtpPDI%2bO2k8Mz47aTw0Pjs%2bO2w8dDxwPGw8c3R5bGU7PjtsPFdJRFRIOjI4OHB4XDs7Pj47Oz47dDxwPGw8c3R5bGU7PjtsPFdJRFRIOjI4OHB4XDs7Pj47Oz47dDxwPGw8dmFsdWU7PjtsPExvZyBPbjs%2bPjs7Pjt0PHQ8O3Q8aTw0PjtAPE1vZGVtICgyOC44IEticHMpO01vZGVtICg1NiBLYnBzKTtCcm9hZGJhbmQ7U21hbGwgQnVzaW5lc3MgTmV0d29yazs%2bO0A8TW9kZW0gKDI4LjggS2Jwcyk7TW9kZW0gKDU2IEticHMpO0Jyb2FkYmFuZDtTbWFsbCBCdXNpbmVzcyBOZXR3b3JrOz4%2bOz47Oz47dDxwPHA8bDxUZXh0Oz47bDxJJ20gdXNpbmcgYSBwdWJsaWMgb3Igc2hhcmVkIGNvbXB1dGVyOz4%2bOz47Oz47Pj47Pj47Pj47bDxjaGVja1B1YmxpYzs%2bPnyFSxZizxHwX9XoFsADoxqhiqak
+    headers: 
+      content-type: 
+      - application/x-www-form-urlencoded
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sat, 02 Jul 2011 20:42:18 GMT
+      server: 
+      - Microsoft-IIS/6.0
+      microsoftofficewebserver: 
+      - 5.0_Pub
+      x-powered-by: 
+      - ASP.NET
+      x-aspnet-version: 
+      - 1.1.4322
+      set-cookie: 
+      - ASP.NET_SessionId=2tkorz45i2cqu2bje2fdrt45; path=/
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      expires: 
+      - "-1"
+      content-type: 
+      - text/html; charset=utf-8
+      content-length: 
+      - "9368"
+    body: "\r\n\
+      <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" >\r\n\
+      \r\n\
+      <HTML xmlns:IE>\r\n\
+      \t<HEAD>\r\n\
+      \t\t<title>Hectic Electric Remote Web Workplace</title>\r\n\
+      \t\t<meta name=\"GENERATOR\" Content=\"Microsoft Visual Studio 7.0\">\r\n\
+      \t\t<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\r\n\
+      \t\t<META HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\r\n\
+      \t\t<meta name=\"CODE_LANGUAGE\" Content=\"C#\">\r\n\
+      \t\t<meta name=\"vs_defaultClientScript\" content=\"JavaScript\">\r\n\
+      \t\t<meta name=\"vs_targetSchema\" content=\"http://schemas.microsoft.com/intellisense/ie5\">\r\n\
+      \t\t<META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\">\r\n\
+      \t\t<STYLE>\r\n\
+      \t\t    .headerBackground { background-image: url(images/login.gif); background-repeat: no-repeat; }\r\n\
+      \t\t\t.headerLogo { FONT-SIZE: 14pt; FONT-WEIGHT: bold; COLOR: white; FONT-FAMILY: Tahoma } \r\n\
+      \t\t\t.subHeader { FONT-SIZE: 12pt; COLOR: white; FONT-FAMILY: Tahoma }\r\n\
+      \t\t\t.linkText { FONT-SIZE: 80%; COLOR: black; FONT-FAMILY: Tahoma }\r\n\
+      \t\t\tA { COLOR: #183c84; TEXT-DECORATION: none } \r\n\
+      \t\t\tA:hover { TEXT-DECORATION: underline } \r\n\
+      \t\t\tA:visited { COLOR: #183c84 } \r\n\
+      \t\t\t\r\n\
+      \t\t\t@media all \r\n\
+      \t\t\t{\r\n\
+      \t\t\t\tIE\\:clientCaps { behavior:url(#default#clientcaps) }\r\n\
+      \t\t\t}\t\t\r\n\
+      \t\t</STYLE>\r\n\
+      \t\t<script language=\"javascript\">\r\n\
+      \t\t\r\n\
+      \t\tvar g_bFocus = true;\r\n\
+      \t\t\t\r\n\
+      \t\tfunction isIE6sp1()\r\n\
+      \t\t{\r\n\
+      \t\t\tvar nVerOffset = navigator.appVersion.indexOf(\"MSIE \");\r\n\
+      \t\t\tif( nVerOffset == -1 ) return true;\r\n\
+      \t\t\t\r\n\
+      \t\t\tvar nVersion = parseFloat(navigator.appVersion.substring(nVerOffset + 5, nVerOffset + 8));\r\n\
+      \r\n\
+      \t\t\tif (!isNaN(nVersion))\r\n\
+      \t\t\t{\r\n\
+      \t\t\t\tif (nVersion > 6)\r\n\
+      \t\t\t\t{\r\n\
+      \t\t\t\t\treturn true;\r\n\
+      \t\t\t\t}\r\n\
+      \t\t\t\telse if (nVersion == 6)\r\n\
+      \t\t\t\t{\r\n\
+      \t\t\t\t\tvar nSPOffset = navigator.appMinorVersion.indexOf(\"SP\");\r\n\
+      \t\t\t\t\tif (nSPOffset != -1)\r\n\
+      \t\t\t\t\t{\r\n\
+      \t\t\t\t\t\tvar nVerSP = parseInt(navigator.appMinorVersion.substring(nSPOffset + 2, nSPOffset + 3), 10);\r\n\
+      \t\t\t\t\t\tif (!isNaN(nVerSP) && (nVerSP >= 1))\r\n\
+      \t\t\t\t\t\t\treturn true;\r\n\
+      \t\t\t\t\t}\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\tvar strIEFullVersion = oClientCaps.getComponentVersion(\"{89820200-ECBD-11CF-8B85-00AA005B4383}\",\"ComponentID\");\t\t\t\t\t\r\n\
+      \t\t\t\t\tif (strIEFullVersion != null)\r\n\
+      \t\t\t\t\t{\r\n\
+      \t\t\t\t\t\tvar aVersionPart = strIEFullVersion.split(\",\");\r\n\
+      \t\t\t\t\t\tif( aVersionPart != null && aVersionPart.length > 3 )\r\n\
+      \t\t\t\t\t\t{\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\tvar nBuildNum = parseInt(aVersionPart[2], 10);\r\n\
+      \t\t\t\t\t\t\tif( !isNaN(nBuildNum) && nBuildNum >= 3790 )\r\n\
+      \t\t\t\t\t\t\t\treturn true;\r\n\
+      \t\t\t\t\t\t}\r\n\
+      \t\t\t\t\t}\t\t\t\t\t\r\n\
+      \t\t\t\t}\r\n\
+      \t\t\t}\r\n\
+      \t\t\treturn false;\r\n\
+      \t\t}\r\n\
+      \r\n\
+      \t\tfunction onLoad()\r\n\
+      \t\t{\r\n\
+      \t\t\tif (top.header != null)\r\n\
+      \t\t\t{\r\n\
+      \t\t\t\ttop.location = \"logon.aspx\";\r\n\
+      \t\t\t}\r\n\
+      \t\t\t\r\n\
+      \t\t\t\r\n\
+      \t\t\t\t\tif(g_bFocus && document.logon.txtUserName.value == \"\")\r\n\
+      \t\t\t\t\t{\r\n\
+      \t\t\t\t\t\tdocument.logon.txtUserName.focus();\r\n\
+      \t\t\t\t\t}\r\n\
+      \t\t\t\r\n\
+      \t\t\t\r\n\
+      \t\t\t// Clear the cache at all times\r\n\
+      \t\t\tdocument.execCommand(\"ClearAuthenticationCache\",\"false\");\t\t\t\r\n\
+      \t\t\tdocument.cookie = \"IE6SP1=\" + isIE6sp1();\r\n\
+      \t\t\t\r\n\
+      \t\t\tvar nVerOffset = navigator.appVersion.indexOf(\"MSIE \");\r\n\
+      \t\t\tif( nVerOffset != -1 )\r\n\
+      \t\t\t{\r\n\
+      \t\t\t    if (isIE6sp1())\r\n\
+      \t\t\t    {\r\n\
+      \t\t\t        var bFound = false;\r\n\
+      \t\t\t        var aCookie = document.cookie.split(\"; \");\r\n\
+      \t\t\t        for (var i = 0; i < aCookie.length && !bFound; i++)\r\n\
+      \t\t\t        {\r\n\
+      \t\t\t            var aCrumb = aCookie[i].split(\"=\");\r\n\
+      \t\t\t            if (aCrumb[0] == \"Trusted\")\r\n\
+      \t\t\t            {\r\n\
+      \t\t\t                if (document.logon.checkPublic != null)\r\n\
+      \t\t\t                {\r\n\
+      \t\t\t                    if (aCrumb[1] == \"True\")\r\n\
+      \t\t\t                        document.logon.checkPublic.checked = true;\r\n\
+      \t\t\t                    else if (aCrumb[1] == \"False\")\r\n\
+      \t\t\t                        document.logon.checkPublic.checked = false;\r\n\
+      \t\t\t                }\r\n\
+      \t\t\t                else if (document.logon.checkPublic2 != null)\r\n\
+      \t\t\t                {\r\n\
+      \t\t\t                    if (aCrumb[1] == \"True\")\r\n\
+      \t\t\t                        document.logon.checkPublic2.checked = true;\r\n\
+      \t\t\t                    else if (aCrumb[1] == \"False\")\r\n\
+      \t\t\t                        document.logon.checkPublic2.checked = false;\r\n\
+      \t\t\t                }\r\n\
+      \t\t\t                bFound = true;\r\n\
+      \t\t\t            }    \r\n\
+      \t\t\t        }    \r\n\
+      \t\t\t    }\r\n\
+      \t\t\t}\r\n\
+      \t\t}\r\n\
+      \t\t\t\t\r\n\
+      \t\tfunction validatePwd()\r\n\
+      \t\t{\r\n\
+      \t\t\tif (document.logon.txtChangeUserPassNew.value != document.logon.txtChangeUserPassConfirm.value)\r\n\
+      \t\t\t{\r\n\
+      \t\t\t\talert('The new password and the confirmation password do not match. Type the same password in both boxes.');\r\n\
+      \t\t\t\treturn false;\r\n\
+      \t\t\t}\r\n\
+      \t\t}\r\n\
+      \t\t</script>\r\n\
+      \t</HEAD>\r\n\
+      \t<body MS_POSITIONING=\"GridLayout\" onload=\"onLoad()\" bgcolor=\"#3A6EA5\">\r\n\
+      \t\t<IE:CLIENTCAPS ID=\"oClientCaps\" />\r\n\
+      \t\t<form name=\"logon\" method=\"post\" action=\"logon.aspx\" id=\"logon\" autocomplete=\"off\">\r\n\
+      <input type=\"hidden\" name=\"__VIEWSTATE\" value=\"dDwtMTk3ODkzNzE3NTt0PHA8bDxydXBGYWlsZWQ7cnVwUGFnZU1vZGU7PjtsPG88dD47Rm9ybVNhbXBsZTEubG9nb24rUEFHRV9NT0RFLCBSRU1PVEUsIFZlcnNpb249NS4yLjI4OTMuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMWJmMzg1NmFkMzY0ZTM1PFBBR0VNT0RFX0xPR09OPjs+PjtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+Oz47bDx0PDtsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47PjtsPHQ8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHN0eWxlOz47bDxXSURUSDoyODhweFw7Oz4+Ozs+O3Q8cDxsPHZhbHVlOz47bDxPSzs+Pjs7Pjt0PHQ8O3Q8aTw0PjtAPE1vZGVtICgyOC44IEticHMpO01vZGVtICg1NiBLYnBzKTtCcm9hZGJhbmQ7U21hbGwgQnVzaW5lc3MgTmV0d29yazs+O0A8TW9kZW0gKDI4LjggS2Jwcyk7TW9kZW0gKDU2IEticHMpO0Jyb2FkYmFuZDtTbWFsbCBCdXNpbmVzcyBOZXR3b3JrOz4+O2w8aTwyPjs+Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPEknbSB1c2luZyBhIHB1YmxpYyBvciBzaGFyZWQgY29tcHV0ZXI7Pj47Pjs7Pjs+Pjt0PDtsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0Pjs+O2w8dDxwPGw8c3R5bGU7PjtsPFdJRFRIOjI4OHB4XDs7Pj47Oz47dDxwPGw8c3R5bGU7PjtsPFdJRFRIOjI4OHB4XDs7Pj47Oz47dDxwPGw8dmFsdWU7PjtsPExvZyBPbjs+Pjs7Pjt0PHQ8O3Q8aTw0PjtAPE1vZGVtICgyOC44IEticHMpO01vZGVtICg1NiBLYnBzKTtCcm9hZGJhbmQ7U21hbGwgQnVzaW5lc3MgTmV0d29yazs+O0A8TW9kZW0gKDI4LjggS2Jwcyk7TW9kZW0gKDU2IEticHMpO0Jyb2FkYmFuZDtTbWFsbCBCdXNpbmVzcyBOZXR3b3JrOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxJJ20gdXNpbmcgYSBwdWJsaWMgb3Igc2hhcmVkIGNvbXB1dGVyOz4+Oz47Oz47Pj47Pj47Pj47bDxjaGVja1B1YmxpYzs+PpjJDAqgrrmMtffzGr3wkWZMJ7vw\" />\r\n\
+      \r\n\
+      \t\t\t\r\n\
+      \t\t\t<table id=\"panelLogon\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\"><tr><td>\r\n\
+      \r\n\
+      \t\t\t\t<table align=center cellpadding=\"0\" cellspacing=\"0\" width=\"448px\" border=\"0\" ID=\"Table5\">\t\t\t\t\t\r\n\
+      \t\t\t\t\t<tr height=\"100px\"><td>&nbsp;</td></tr>\r\n\
+      \t\t\t\t\t<tr height=\"110px\">\r\n\
+      \t\t\t\t\t\t<td>\r\n\
+      \t\t\t\t\t\t\t<table width=\"448px\" height=\"110px\" cellspacing=\"12\" class=\"headerBackground\" ID=\"Table6\">\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"20px\"><td>&nbsp;</td></tr>\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"52px\">\r\n\
+      \t\t\t\t\t\t\t\t\t<td width=\"51px\">&nbsp;</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td width=\"32px\"><img src=\"images/winxp.gif\"></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td>\r\n\
+      \t\t\t\t\t\t\t\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" ID=\"Table7\" height=\"32px\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<tr><td class=\"subHeader\">\tHectic Electric</td></tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<tr><td class=\"headerLogo\">Remote Web Workplace</td></tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t<td class=linkText>\r\n\
+      \t\t\t\t\t\t\t<table bgcolor=White ID=\"Table8\" width=\"448px\" cellspacing=\"12\">\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t<td colspan=3 bgcolor=#FFFFCC style=\"BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: gray 1px solid\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t<table ID=\"Table9\" cellspacing=\"12\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<td width=16px><img src='images/stop.gif'></td>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<td class=linkText width=360px>The user name or password is incorrect. Verify that CAPS LOCK is not on, and then retype the current user name and password. If you receive this message again, contact your system administrator to ensure that you have the correct permissions to use the Remote Web Workplace.</td>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td align=right class=linkText>User name:</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<TD class=\"linkText\"><input name=\"txtUserName\" id=\"txtUserName\" type=\"text\" tabIndex=\"1\" style=\"WIDTH:288px;\" value=\"julik\" /></TD>\r\n\
+      \t\t\t\t\t\t\t\t\t<td class=\"linkText\"></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td align=right class=linkText>Password:</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<TD class=\"linkText\"><input name=\"txtUserPass\" id=\"txtUserPass\" type=\"password\" tabIndex=\"2\" onfocus=\"g_bFocus=false;\" style=\"WIDTH:288px;\" /></TD>\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"20px\">\r\n\
+      \t\t\t\t\t\t\t\t\t<td colspan=3 align=right><input name=\"cmdLogin\" id=\"cmdLogin\" type=\"submit\" tabIndex=\"3\" value=\"Log On\" /></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td align=right class=linkText>Connection speed:</td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td><select name=\"listSpeed\" id=\"listSpeed\" tabindex=\"4\" class=\"linkText\">\r\n\
+      \t\t<option value=\"Modem (28.8 Kbps)\">Modem (28.8 Kbps)</option>\r\n\
+      \t\t<option value=\"Modem (56 Kbps)\">Modem (56 Kbps)</option>\r\n\
+      \t\t<option selected=\"selected\" value=\"Broadband\">Broadband</option>\r\n\
+      \t\t<option value=\"Small Business Network\">Small Business Network</option>\r\n\
+      \r\n\
+      \t</select></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td class=\"linkText\"></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr>\r\n\
+      \t\t\t\t\t\t\t\t\t<td></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td><span class=\"linkText\"><input id=\"checkPublic\" type=\"checkbox\" name=\"checkPublic\" tabindex=\"5\" /><label for=\"checkPublic\">I'm using a public or shared computer</label></span></td>\r\n\
+      \t\t\t\t\t\t\t\t\t<td class=\"linkText\"></td>\r\n\
+      \t\t\t\t\t\t\t\t</tr>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t<tr height=\"20px\"><td colspan=3 align=right><img src=\"images/RwwOEMLogo.gif\"></td></tr>\r\n\
+      \t\t\t\t\t\t\t</table>\r\n\
+      \t\t\t\t\t\t</td>\r\n\
+      \t\t\t\t\t</tr>\t\t\t\t\t\r\n\
+      \t\t\t\t</table>\r\n\
+      \t\t\t\r\n\
+      </td></tr></table>\r\n\
+      \t\t</form>\r\n\
+      \t</body>\r\n\
+      </HTML>\r\n"
+    http_version: "1.1"
