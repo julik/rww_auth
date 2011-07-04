@@ -1,7 +1,7 @@
 require "bundler"
 Bundler.require(:test)
 
-require File.expand_path(File.dirname(__FILE__)) + "/../lib/rmww_auth"
+require File.expand_path(File.dirname(__FILE__)) + "/../lib/rww_auth"
 require 'test/unit'
 
 VCR.config do |c|

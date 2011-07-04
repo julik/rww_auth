@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'hoe'
-require './lib/rmww_auth'
+require './lib/rww_auth'
 
 Hoe::RUBY_FLAGS.gsub!(/^\-w/, '') # No thanks undefined ivar warnings
 Hoe.spec 'rww_auth' do | s |
