@@ -8,6 +8,9 @@ Allows password checks against a Remote Web Workplace server (a.k.a. Outlook Web
 
 == Synopsis
 
+Easy.
+
+     require "rww_auth"
      server = RemoteWorkplaceAuth.new("server.enterprise.uz", use_ssl = true)
      server.auth("john", "secret") #=> returns true if the password is correct
 
