@@ -9,7 +9,7 @@ retrieved. Please go and make OpenID frontends from that, I dare you!
 
 Usage:
 
-    rww_servr = RemoteWebWorkplaceAuth.new("intranet.bigenterprise.com" use_ssl = true)
+    rww_servr = RemoteWorkplaceAuth.new("intranet.bigenterprise.com", use_ssl = true)
     if rww_servr.authenticate("julik", "topsecret")
       puts "Yuppie!"
     else
