@@ -1,6 +1,8 @@
 source :gemcutter
 
-group :test do
+group :development do
+  gem "jeweler"
+  gem "rake"
   gem "vcr"
   gem "webmock"
 end

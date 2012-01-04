@@ -1,16 +1,26 @@
 # -*- ruby -*-
-
-require 'rubygems'
-require 'hoe'
+require "bundler"
+Bundler.require(:development)
 require './lib/rww_auth'
 
-Hoe::RUBY_FLAGS.gsub!(/^\-w/, '') # No thanks undefined ivar warnings
-Hoe.spec 'rww_auth' do | s |
-  s.version = RemoteWorkplaceAuth::VERSION
-  s.readme_file   = 'README.rdoc'
-  s.developer('Julik', 'me@julik.nl')
-  s.extra_dev_deps = {"vcr" => "~> 1.0.0"}
-  s.clean_globs = %w( **/.DS_Store  coverage.info **/*.rbc .idea .yardoc)
+Jeweler::Tasks.new do |gem|
+  gem.version = RemoteWorkplaceAuth::VERSION
+  gem.name = "rww_auth"
+  gem.summary = "Authenticate against an Outlook Webmail install. Seriously, f#ck LDAP."
+  gem.email = "me@julik.nl"
+  gem.homepage = "http://github.com/julik/rww_auth"
+  gem.authors = ["Julik Tarkhanov"]
 end
+
+Jeweler::RubygemsDotOrgTasks.new
+
+require 'rake/testtask'
+desc "Run all tests"
+Rake::TestTask.new("test") do |t|
+  t.libs << "test"
+  t.pattern = 'test/**/test_*.rb'
+  t.verbose = true
+end
+task :default => :test
 
 # vim: syntax=ruby

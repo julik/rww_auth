@@ -10,7 +10,7 @@ retrieved. Please go and make OpenID frontends from that, I dare you!
 Usage:
 
     rww_servr = RemoteWorkplaceAuth.new("intranet.bigenterprise.com", use_ssl = true)
-    if rww_servr.authenticate("julik", "topsecret")
+    if rww_servr.auth("julik", "topsecret")
       puts "Yuppie!"
     else
       puts "No donut"
@@ -69,7 +69,8 @@ class RemoteWorkplaceAuth
     def with_viewstate
       viewstate_payload = @outlook.start do |http|
         request = Net::HTTP::Get.new(@base_login_url)
-        response = http.request(request); response.value
+        response = http.request(request); 
+        response.value
         response.body.scan(VIEW_STATE_PAT).pop.pop
       end
       yield viewstate_payload

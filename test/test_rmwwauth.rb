@@ -1,6 +1,5 @@
 require "bundler"
-Bundler.require(:test)
-
+Bundler.require(:default, :development, :test)
 require File.expand_path(File.dirname(__FILE__)) + "/../lib/rww_auth"
 require 'test/unit'
 

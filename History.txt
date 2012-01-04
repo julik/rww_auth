@@ -1,3 +1,7 @@
+=== 1.0.3 / 2011-07-04
+
+* Migrated to jeweler
+
 === 1.0.1 / 2011-07-04
 
 * Fix the file name
