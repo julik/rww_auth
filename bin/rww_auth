@@ -16,7 +16,7 @@ require 'optparse'
 $server = "useless-expensive-propriatery-crapserver.local"
 $login = "admin"
 $password = "ishouldhavewenttoworkatabankinstead"
-$ssl = false
+$ssl = true
 
 op = OptionParser.new
 op.on("--server HOSTNAME", String, "Call this server") do | un |
