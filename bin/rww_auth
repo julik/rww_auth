@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+# == Synopsis
+# 
+# Authenticate agains a Shitlook Shitchange webmail server. Exits with 0 if auth succeeded.
+#
+# == Usage
+# 
+#   rww_auth --server propriatary.crapserver.ourcompamy.kz --user admin --password nakedbabesondiskc
+#
+# == Author
+#   Julik <me@julik.nl>
+
+require File.dirname(__FILE__) + '/../lib/rww_auth'
+require 'optparse'
+
+$server = "useless-expensive-propriatery-crapserver.local"
+$login = "admin"
+$password = "ishouldhavewenttoworkatabankinstead"
+$ssl = false
+
+op = OptionParser.new
+op.on("--server HOSTNAME", String, "Call this server") do | un |
+  $server = un
+end
+op.on("--user LOGIN", String, "Use this username") do | un |
+  $login = un
+end
+op.on("--password PW", String, "Use this password") do | pw |
+  $password = pw
+end
+op.on("--ssl", "Use SSL and it's default port") do | flag |
+  $ssl = true
+end
+
+op.parse!
+
+rww_servr = RemoteWorkplaceAuth.new($server, $ssl)
+if rww_servr.auth($login, $password)
+  puts "OK!"
+  exit 0
+end
+
+raise "NOPE!"
